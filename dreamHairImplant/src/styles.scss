@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Karla:ital,wght@1,600&family=Onest&display=swap');
+h1, h2,h3, h4{
+  font-family: 'Hedvig Letters Serif', serif;
+}

@@ -1,0 +1,46 @@
+.bgNav{
+  height: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.imgLogo{
+  width: 100px;
+  height: 100px;
+}
+.al:hover{
+  border-bottom: 1px solid gray;
+}
+.dropdownAltro{
+  background-color: #7ED957;
+  border-radius: 0;
+  -webkit-box-shadow: 10px 14px 11px 1px rgba(0,0,0,0.59);
+  box-shadow: 10px 14px 11px 1px rgba(0,0,0,0.59);
+}
+.hoverAltro:hover{
+  color: black !important;
+}
+@media screen and (max-width: 991px) {
+.bgCollapsed{
+  background-color: #7ED957;
+  border: 2px solid #0DC0DF;
+}
+.altro , a {
+  color: white;
+}
+.dropdownAltro{
+  background-color: #0DC0DF;
+  border-radius: 0;
+  -webkit-box-shadow: 10px 14px 11px 1px rgba(0,0,0,0.59);
+  box-shadow: 10px 14px 11px 1px rgba(0,0,0,0.59);
+}
+.al:hover{
+  border-bottom: none;
+  color: white;
+}
+}
+
+
+
+
+
+
+

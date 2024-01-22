@@ -1,0 +1,82 @@
+<nav
+  class="navbar navbar-expand-lg navbar-light border-bottom fixed-top bgNav container-fluid bg-white"
+>
+  <div class="container-fluid bgNav">
+    <a class="navbar-brand" [routerLink]="['']"
+      ><img src="../../../assets/logo.png" class="imgLogo ms-3 pb-2" alt="logo"
+    /></a>
+
+    <button
+      class="navbar-toggler border-0 me-3"
+      type="button"
+      (click)="isMenuCollapsed = !isMenuCollapsed"
+    >
+      &#9776;
+    </button>
+
+    <div
+      [ngbCollapse]="isMenuCollapsed"
+      class="collapse navbar-collapse justify-content-end bgCollapsed"
+    >
+      <ul class="navbar-nav text-center text-lg-end">
+        <li class="nav-item active">
+          <a
+            class="nav-link al pb-0"
+            (click)="isMenuCollapsed = true"
+            [routerLink]="['']"
+            >HOME</a
+          >
+        </li>
+        <li class="nav-item al">
+          <div ngbDropdown class="d-inline-block">
+            <button
+              type="button"
+              class="border-0 nav-link pb-0 altro"
+              id="dropdownBasic1"
+              ngbDropdownToggle
+            >
+              ALTRO
+            </button>
+            <div
+              ngbDropdownMenu
+              aria-labelledby="dropdownBasic1"
+              class="dropdownAltro"
+            >
+              <a
+                ngbDropdownItem
+                [routerLink]="['tecnicaFue']"
+                (click)="isMenuCollapsed = true"
+                class="text-light hoverAltro"
+                >TECNICA MICRO FUE - DHI</a
+              >
+              <a
+                ngbDropdownItem
+                [routerLink]="['domandeFrequenti']"
+                (click)="isMenuCollapsed = true"
+                class="text-light hoverAltro"
+                >DOMANDE</a
+              >
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link al pb-0"
+            (click)="isMenuCollapsed = true"
+            [routerLink]="['clinica']"
+            >CLINICA</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link al pb-0"
+            (click)="isMenuCollapsed = true"
+            [routerLink]="['contatti']"
+            >CONTATTI</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,181 @@
+.imgClinic{
+   background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url(../../../assets/clinic.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 100%;
+ }
+ .main{
+  margin-top: 100px;
+ }
+//style card section step del viaggio
+.containerCard{
+  background-color: #7ED957;
+}
+.card {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 300px;
+  height: 200px;
+  background: #7ED957;
+  border: 1px solid #7ED957;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  user-select: none;
+  font-weight: bolder;
+  color: white;
+}
+.card:hover {
+  border: 2px solid #0CC0DF;
+  transform: scale(1.05);
+}
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+//style bottone contatti
+a {
+  border: none;
+  display: block;
+  position: relative;
+  padding: 0.7em 2.4em;
+  font-size: 18px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color: royalblue;
+  z-index: 1;
+  font-family: inherit;
+  font-weight: 500;
+}
+a span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 4px solid royalblue;
+}
+a span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: var(--lightgray);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s;
+}
+a:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: royalblue;
+}
+a:hover {
+  color: white;
+}
+a:active span::before {
+  background: #2751cd;
+}
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+//section contatti
+.num{
+  color: green;
+  display: inline;
+}
+.num:hover{
+  color: green;
+}
+.scale-in-left {
+	-webkit-animation: scale-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes scale-in-left {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+}
+.scale-in-right {
+	-webkit-animation: scale-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-in-right {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-right {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    opacity: 1;
+  }
+}
+//style formato img dei risultati
+@media screen and (max-width: 668px) {
+
+  .imgFormato{
+  width: 100%;
+  }
+
+}
+@media screen and (max-width: 991px) {
+
+  .imgClinic{
+    background-image: none;
+   }
+
+   .divText{
+    background-color: #7ED957;
+    padding: 30px;
+   }
+
+}
+

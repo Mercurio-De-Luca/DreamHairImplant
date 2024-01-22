@@ -1,0 +1,151 @@
+.scale-in-left {
+	-webkit-animation: scale-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes scale-in-left {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+}
+.btnContattami {
+  border: none;
+  display: block;
+  position: relative;
+  padding: 0.7em 2.4em;
+  font-size: 18px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color: royalblue;
+  z-index: 1;
+  font-family: inherit;
+  font-weight: 500;
+}
+.btnContattami span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 4px solid royalblue;
+}
+.btnContattami span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: var(--lightgray);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s;
+}
+.btnContattami:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: royalblue;
+}
+.btnContattami:hover {
+  color: white;
+}
+.btnContattami:active span::before {
+  background: #2751cd;
+}
+.bg{
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.bg1{
+  background-image: url('../../../assets/tecnologieAllAvanguardia.jpg');
+
+}
+.bg2{
+  background-image: url('../../../assets/operazione.jpg');
+}
+.bg3{
+  background-image: url('../../../assets/centroCertificato.jpg');
+}
+.bgText{
+  background-color: #80DC58;
+}
+.maps{
+  height: 400px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)), url(../../../assets/mapsClinc.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.demo{
+  -webkit-box-shadow: 13px 12px 8px -3px #000000;
+box-shadow: 13px 12px 8px -3px #000000;
+}
+@media screen and (max-width: 756px) {
+  .maps{
+    height: 200px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)), url(../../../assets/mapsClinc.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+//style button instagram
+.Btn {
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: .4s;
+  cursor: pointer;
+  position: relative;
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  overflow: hidden;
+}
+.svgIcon {
+  transition-duration: .3s;
+}
+.svgIcon path {
+  fill: white;
+}
+.text {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 120px;
+  font-weight: 600;
+  opacity: 0;
+  transition-duration: .4s;
+}
+.Btn:hover {
+  width: 110px;
+  transition-duration: .4s;
+  border-radius: 30px;
+}
+.Btn:hover .text {
+  opacity: 1;
+  transition-duration: .4s;
+}
+.Btn:hover .svgIcon {
+  opacity: 0;
+  transition-duration: .3s;
+}
